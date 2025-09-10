@@ -1,6 +1,6 @@
 # 📱 BkHelper
 
-BkHelper là một **mobile app** được phát triển bằng **React Native + Expo** nhằm hỗ trợ sinh viên Bách Khoa tìm kiếm nhanh chóng thông tin **khóa học, giờ học, phòng học, và giảng viên** trong trường.
+BkHelper is a **mobile application** built with **React Native + Expo** to help students at Bách Khoa University quickly search for **courses, schedules, classrooms, and lecturers**.
 
 ## 🚀 Tech Stack
 
@@ -16,72 +16,72 @@ BkHelper là một **mobile app** được phát triển bằng **React Native +
 - **Storage**: `@react-native-async-storage/async-storage`
 - **Web Support**: `react-native-web`, `react-native-webview`
 
-## 📂 Cấu trúc thư mục
+## 📂 Project Structure
 
 ```
 src/
-├── app/            # Màn hình + layout (sử dụng expo-router)
-├── assets/         # Hình ảnh, fonts, icons
-├── components/     # Các UI component tái sử dụng
-├── constants/      # Màu sắc, config, enums
+├── app/            # Screens + layout (using expo-router)
+├── assets/         # Images, fonts, icons
+├── components/     # Reusable UI components
+├── constants/      # Colors, config, enums
 ├── context/        # React Context (Auth, Theme...)
 ├── hooks/          # Custom hooks (useAuth, useTheme...)
-├── scripts/        # Script hỗ trợ (reset project...)
-├── services/       # Gọi API, Axios instance, service layer
+├── scripts/        # Utility scripts (reset project...)
+├── services/       # API calls, Axios instance, service layer
 ├── types/          # TypeScript types & interfaces
-└── utils/          # Hàm tiện ích, format date, logger...
+└── utils/          # Helpers, format date, logger...
 ```
 
-## 🛠️ Cài đặt & Chạy ứng dụng
+## 🛠️ Installation & Run
 
-### 1️⃣ Yêu cầu môi trường
+### 1️⃣ Prerequisites
 - [Node.js >= 18](https://nodejs.org)
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)
 
-### 2️⃣ Clone project
+### 2️⃣ Clone the project
 ```bash
 git clone https://github.com/thinhnguyen07022004/BkHelper.git
 cd BkHelper
 ```
 
-### 3️⃣ Cài đặt dependencies
+### 3️⃣ Install dependencies
 ```bash
 npm install
-# hoặc yarn install
+# or yarn install
 ```
 
-### 4️⃣ Chạy ứng dụng
+### 4️⃣ Start the app
 ```bash
 npm run start
-# Mở app Expo Go trên điện thoại và quét QR code
+# Open Expo Go app on your phone and scan the QR code
 ```
 
-Chạy trên nền tảng cụ thể:
+Run on specific platforms:
 ```bash
-npm run android   # Android Emulator hoặc thiết bị thật
-npm run ios       # iOS Simulator (macOS)
-npm run web       # Chạy trên web
+npm run android   # Run on Android emulator or physical device
+npm run ios       # Run on iOS simulator (macOS)
+npm run web       # Run in browser
 ```
 
-### 5️⃣ Reset project (nếu cần)
+### 5️⃣ Reset project (if needed)
 ```bash
 npm run reset-project
 ```
 
-## 📚 Scripts
+## 📚 Available Scripts
 
-| Lệnh                | Mô tả                          |
-|--------------------|--------------------------------|
-| `npm start`        | Khởi động project (Expo)       |
-| `npm run android`  | Chạy trên Android              |
-| `npm run ios`      | Chạy trên iOS                  |
-| `npm run web`      | Chạy trên trình duyệt Web      |
-| `npm run reset-project` | Dọn dẹp cache & node_modules |
+| Command                | Description                      |
+|----------------------|----------------------------------|
+| `npm start`          | Start the Expo project           |
+| `npm run android`    | Run on Android                   |
+| `npm run ios`        | Run on iOS                       |
+| `npm run web`        | Run on Web                       |
+| `npm run reset-project` | Clean cache & node_modules     |
 
-## 📦 Các thư viện chính
+## 📦 Main Dependencies
 
-| Nhóm              | Thư viện |
-|------------------|---------|
+| Category          | Libraries |
+|------------------|-----------|
 | **UI/UX**        | `@expo/vector-icons`, `expo-linear-gradient`, `expo-blur`, `expo-font`, `expo-haptics`, `expo-image`, `react-native-root-toast` |
 | **Navigation**   | `expo-router`, `@react-navigation/native`, `@react-navigation/bottom-tabs`, `@react-navigation/native-stack`, `@react-navigation/elements` |
 | **Networking**   | `axios` |
@@ -90,19 +90,19 @@ npm run reset-project
 | **System**       | `expo-constants`, `expo-splash-screen`, `expo-status-bar`, `expo-linking`, `expo-system-ui`, `expo-web-browser` |
 | **Web Support**  | `react-native-web`, `react-native-webview` |
 
-## 🤝 Đóng góp
+## 🤝 Contributing
 
-Mọi đóng góp đều được chào đón!  
-- Fork repo  
-- Tạo nhánh (`git checkout -b feature/my-feature`)  
-- Commit thay đổi (`git commit -m 'Add feature'`)  
-- Push nhánh (`git push origin feature/my-feature`)  
-- Tạo Pull Request
+Contributions are welcome!  
+- Fork the repo  
+- Create a branch (`git checkout -b feature/my-feature`)  
+- Commit your changes (`git commit -m 'Add feature'`)  
+- Push the branch (`git push origin feature/my-feature`)  
+- Open a Pull Request
 
-## 📜 Giấy phép
+## 📜 License
 
-Dự án này được phát hành dưới [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-👨‍💻 **Tác giả**: [Thinh Nguyen](https://github.com/thinhnguyen07022004)
+👨‍💻 **Author**: [Thinh Nguyen](https://github.com/thinhnguyen07022004)
