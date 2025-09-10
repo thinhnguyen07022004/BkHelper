@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# 📱 BkHelper
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+BkHelper là một **mobile app** được phát triển bằng **React Native + Expo** nhằm hỗ trợ sinh viên Bách Khoa tìm kiếm nhanh chóng thông tin **khóa học, giờ học, phòng học, và giảng viên** trong trường.
 
-## Get started
+## 🚀 Tech Stack
 
-1. Install dependencies
+- **Framework**: [React Native](https://reactnative.dev/) + [Expo](https://expo.dev/)
+- **Navigation**: [Expo Router](https://expo.github.io/router) + [React Navigation](https://reactnavigation.org/)
+- **State & Form**: [Formik](https://formik.org/)
+- **Networking**: [Axios](https://axios-http.com/)
+- **UI/UX**:
+  - `@expo/vector-icons` – Icon pack
+  - `expo-linear-gradient`, `expo-blur` – UI effects
+  - `react-native-root-toast` – Toast notification
+- **Animation**: `react-native-reanimated`, `react-native-gesture-handler`
+- **Storage**: `@react-native-async-storage/async-storage`
+- **Web Support**: `react-native-web`, `react-native-webview`
 
-   ```bash
-   npm install
-   ```
+## 📂 Cấu trúc thư mục
 
-2. Start the app
+```
+src/
+├── app/            # Màn hình + layout (sử dụng expo-router)
+├── assets/         # Hình ảnh, fonts, icons
+├── components/     # Các UI component tái sử dụng
+├── constants/      # Màu sắc, config, enums
+├── context/        # React Context (Auth, Theme...)
+├── hooks/          # Custom hooks (useAuth, useTheme...)
+├── scripts/        # Script hỗ trợ (reset project...)
+├── services/       # Gọi API, Axios instance, service layer
+├── types/          # TypeScript types & interfaces
+└── utils/          # Hàm tiện ích, format date, logger...
+```
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Cài đặt & Chạy ứng dụng
 
-In the output, you'll find options to open the app in a
+### 1️⃣ Yêu cầu môi trường
+- [Node.js >= 18](https://nodejs.org)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 2️⃣ Clone project
+```bash
+git clone https://github.com/thinhnguyen07022004/BkHelper.git
+cd BkHelper
+```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 3️⃣ Cài đặt dependencies
+```bash
+npm install
+# hoặc yarn install
+```
 
-## Get a fresh project
+### 4️⃣ Chạy ứng dụng
+```bash
+npm run start
+# Mở app Expo Go trên điện thoại và quét QR code
+```
 
-When you're ready, run:
+Chạy trên nền tảng cụ thể:
+```bash
+npm run android   # Android Emulator hoặc thiết bị thật
+npm run ios       # iOS Simulator (macOS)
+npm run web       # Chạy trên web
+```
 
+### 5️⃣ Reset project (nếu cần)
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 📚 Scripts
 
-## Learn more
+| Lệnh                | Mô tả                          |
+|--------------------|--------------------------------|
+| `npm start`        | Khởi động project (Expo)       |
+| `npm run android`  | Chạy trên Android              |
+| `npm run ios`      | Chạy trên iOS                  |
+| `npm run web`      | Chạy trên trình duyệt Web      |
+| `npm run reset-project` | Dọn dẹp cache & node_modules |
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📦 Các thư viện chính
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+| Nhóm              | Thư viện |
+|------------------|---------|
+| **UI/UX**        | `@expo/vector-icons`, `expo-linear-gradient`, `expo-blur`, `expo-font`, `expo-haptics`, `expo-image`, `react-native-root-toast` |
+| **Navigation**   | `expo-router`, `@react-navigation/native`, `@react-navigation/bottom-tabs`, `@react-navigation/native-stack`, `@react-navigation/elements` |
+| **Networking**   | `axios` |
+| **State & Form** | `formik`, `@react-native-async-storage/async-storage` |
+| **Animation**    | `react-native-reanimated`, `react-native-gesture-handler` |
+| **System**       | `expo-constants`, `expo-splash-screen`, `expo-status-bar`, `expo-linking`, `expo-system-ui`, `expo-web-browser` |
+| **Web Support**  | `react-native-web`, `react-native-webview` |
 
-## Join the community
+## 🤝 Đóng góp
 
-Join our community of developers creating universal apps.
+Mọi đóng góp đều được chào đón!  
+- Fork repo  
+- Tạo nhánh (`git checkout -b feature/my-feature`)  
+- Commit thay đổi (`git commit -m 'Add feature'`)  
+- Push nhánh (`git push origin feature/my-feature`)  
+- Tạo Pull Request
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📜 Giấy phép
+
+Dự án này được phát hành dưới [MIT License](LICENSE).
+
+---
+
+👨‍💻 **Tác giả**: [Thinh Nguyen](https://github.com/thinhnguyen07022004)
